@@ -5,11 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Unbeatable Tic Tac Toe</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nanum+Gothic"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 	<body>
 		<div class="body-container">
-			<div class="start-screen">
+			<div class="start screen hidden">
 				<div class="game-choice clicked">
 					<div class="player-container">
 						<img
@@ -48,8 +54,33 @@
 				</div>
 				<button class="button">Start Game</button>
 			</div>
-			<div class="hidden"></div>
-			<div class="hidden"></div>
+			<div class="play screen">
+				<div class="top-play">
+					<div class="player your-turn"><p>Player 1</p></div>
+					<div class="player"><p>Player 2</p></div>
+				</div>
+				<div class="board">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<button class="button">Restart</button>
+			</div>
+			<div class="end screen hidden">
+				<div class="top-end-screen">
+					<p>Computer Wins!</p>
+				</div>
+				<div class="bottom-end-screen">
+					<button class="button">Play Again</button>
+					<button class="button">Home Screen</button>
+				</div>
+			</div>
 			<script src="./scripts/script.js"></script>
 		</div>
 	</body>
