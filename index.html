@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div class="body-container">
-			<div class="start screen hidden">
+			<div class="start screen">
 				<div class="game-choice clicked">
 					<div class="player-container">
 						<img
@@ -23,7 +23,7 @@
 							src="./photos/icons8-person-64.png"
 							alt=""
 						/>
-						<input type="text" placeholder="player" />
+						<input type="text" placeholder="player" class="player-names" />
 					</div>
 					<div class="player-container">
 						<img
@@ -41,7 +41,7 @@
 							src="./photos/icons8-person-64.png"
 							alt=""
 						/>
-						<input type="text" placeholder="player 1" />
+						<input type="text" placeholder="player 1" class="player-names" />
 					</div>
 					<div class="player-container">
 						<img
@@ -49,12 +49,12 @@
 							src="./photos/icons8-person-64.png"
 							alt=""
 						/>
-						<input type="text" placeholder="player 2" />
+						<input type="text" placeholder="player 2" class="player-names" />
 					</div>
 				</div>
-				<button class="button">Start Game</button>
+				<button class="button" id="start-button">Start Game</button>
 			</div>
-			<div class="play screen">
+			<div class="play screen hidden">
 				<div class="top-play">
 					<div class="player your-turn"><p>Player 1</p></div>
 					<div class="player"><p>Player 2</p></div>
